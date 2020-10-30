@@ -5,6 +5,9 @@
  */
 package paquet1;
 
+import cartes.CControleurTableauCartes;
+import cartes.JFrameCartes;
+
 /**
  *
  * @author Damien
@@ -16,6 +19,15 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        //Création des objets
+        CControleurTableauCartes controleur = new CControleurTableauCartes();
+        JFrameCartes jFrame = new JFrameCartes();
+
+        //Mise en relation des objets
+        jFrame.setControleurTableauCartes(controleur);
+        controleur.setjFrameCartes(jFrame);
+        
+        jFrame.setVisible(true);
     }
     
 }

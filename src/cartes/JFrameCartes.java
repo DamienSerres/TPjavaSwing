@@ -128,6 +128,9 @@ public class JFrameCartes extends javax.swing.JFrame {
         return jTableAfficheCartes;
     }
 
+    public void setControleurTableauCartes(CControleurTableauCartes controleurTableauCartes) {
+        this.controleurTableauCartes = controleurTableauCartes;
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonPiocheUneCarte;
     private javax.swing.JScrollPane jScrollPane1;

@@ -10,7 +10,11 @@ package cartes;
  * @author Damien
  */
 public class CControleurTableauCartes {
-    JFrameCartes jFrameCartes;
+    private JFrameCartes jFrameCartes;
+
+    public void setjFrameCartes(JFrameCartes jFrameCartes) {
+        this.jFrameCartes = jFrameCartes;
+    }
 
     void piocheTableau() {
         this.afficheCarteTableauLigne0(Cartes.piocheUneCarte());

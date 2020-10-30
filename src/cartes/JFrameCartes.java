@@ -37,7 +37,7 @@ public class JFrameCartes extends javax.swing.JFrame {
 
         jTableAfficheCartes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null}
+
             },
             new String [] {
                 "Valeur", "Couleur"
@@ -86,7 +86,7 @@ public class JFrameCartes extends javax.swing.JFrame {
 
     private void jButtonPiocheUneCarteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPiocheUneCarteActionPerformed
         // TODO add your handling code here:
-        this.controleurTableauCartes.piocheTableau();
+        this.controleurTableauCartes.piocheUneCarte();
     }//GEN-LAST:event_jButtonPiocheUneCarteActionPerformed
 
     /**

@@ -63,6 +63,14 @@ public class Cartes {
         return str;
     }
 
+    public String getValeur() {
+        return valeur;
+    }
+
+    public String getCouleur() {
+        return couleur;
+    }
+
     public static void main(String[] args) {
         //JOptionPane.showMessageDialog(null, "Coucou");
         //Cartes test = new Cartes();

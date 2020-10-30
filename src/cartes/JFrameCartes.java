@@ -5,6 +5,8 @@
  */
 package cartes;
 
+import javax.swing.JTable;
+
 /**
  *
  * @author Damien
@@ -35,7 +37,7 @@ public class JFrameCartes extends javax.swing.JFrame {
 
         jTableAfficheCartes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-
+                {null, null}
             },
             new String [] {
                 "Valeur", "Couleur"
@@ -67,7 +69,7 @@ public class JFrameCartes extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jButtonPiocheUneCarte)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(72, Short.MAX_VALUE))
+                .addContainerGap(33, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -76,7 +78,7 @@ public class JFrameCartes extends javax.swing.JFrame {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(46, 46, 46)
                 .addComponent(jButtonPiocheUneCarte)
-                .addContainerGap(64, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -84,6 +86,7 @@ public class JFrameCartes extends javax.swing.JFrame {
 
     private void jButtonPiocheUneCarteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPiocheUneCarteActionPerformed
         // TODO add your handling code here:
+        this.controleurTableauCartes.piocheTableau();
     }//GEN-LAST:event_jButtonPiocheUneCarteActionPerformed
 
     /**
@@ -121,9 +124,15 @@ public class JFrameCartes extends javax.swing.JFrame {
         });
     }
 
+    public JTable getjTableAfficheCartes() {
+        return jTableAfficheCartes;
+    }
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonPiocheUneCarte;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTableAfficheCartes;
     // End of variables declaration//GEN-END:variables
+private CControleurTableauCartes controleurTableauCartes;
+
 }

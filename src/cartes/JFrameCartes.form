@@ -86,6 +86,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Pioche une carte"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonPiocheUneCarteActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

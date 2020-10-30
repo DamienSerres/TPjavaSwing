@@ -52,6 +52,11 @@ public class JFrameCartes extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTableAfficheCartes);
 
         jButtonPiocheUneCarte.setText("Pioche une carte");
+        jButtonPiocheUneCarte.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonPiocheUneCarteActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -76,6 +81,10 @@ public class JFrameCartes extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButtonPiocheUneCarteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPiocheUneCarteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonPiocheUneCarteActionPerformed
 
     /**
      * @param args the command line arguments
